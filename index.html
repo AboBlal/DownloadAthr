@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق أثر | اختبر معلوماتك الدينية</title>
+    <style>
+        :root {
+            --main-green: #1b4d3e;
+            --gold: #c5a059;
+            --soft-white: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif; /* يفضل إضافة خط Cairo من Google Fonts */
+            margin: 0;
+            background-color: var(--soft-white);
+            color: #333;
+            text-align: center;
+        }
+
+        /* الهيدر */
+        header {
+            background: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .logo-text {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--main-green);
+            letter-spacing: 2px;
+        }
+
+        /* القسم الرئيسي */
+        .hero-section {
+            padding: 60px 20px;
+            background: linear-gradient(rgba(27, 77, 62, 0.9), rgba(27, 77, 62, 0.9)), 
+                        url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* خلفية إسلامية */
+            background-size: cover;
+            color: white;
+        }
+
+        .hero-section h1 { font-size: 40px; margin-bottom: 10px; }
+        .hero-section p { font-size: 20px; opacity: 0.9; }
+
+        /* قسم مميزات المسابقات */
+        .quiz-features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px 10%;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card i { font-size: 40px; color: var(--gold); }
+
+        /* زر التحميل */
+        .cta-button {
+            display: inline-block;
+            padding: 18px 45px;
+            background-color: var(--gold);
+            color: white;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(197, 160, 89, 0.4);
+        }
+
+        /* التذييل */
+        footer {
+            background: #111;
+            color: #888;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .designer-name {
+            color: var(--gold);
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">أثـر</div>
+        <div>ترفيه • معرفة • أجر</div>
+    </header>
+
+    <section class="hero-section">
+        <h1>تعلّم دينك بمتعة وتحدّي</h1>
+        <p>أضخم موسوعة أسئلة وأجوبة دينية في تطبيق واحد</p>
+        <a href="https://www.mediafire.com/file/wyi32md1gcccqcz/Athar+1.0+(2).zip/file" class="cta-button">  نزل التطبيق الان</a>
+    </section>
+
+    <section class="quiz-features">
+        <div class="card">
+            <h3>آلاف الأسئلة</h3>
+            <p>أسئلة متنوعة في القرآن، السيرة، والفقه بأسلوب ممتع.</p>
+        </div>
+        <div class="card">
+            <h3>لوحة الشرف</h3>
+            <p>نافس أصدقاءك وتصدر قائمة الأوائل في الإجابات الصحيحة.</p>
+        </div>
+        <div class="card">
+            <h3>أوسمة وإنجازات</h3>
+            <p>احصل على أوسمة كلما تقدمت في المستويات المعرفية.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>حقوق النشر والتصميم محفوظة لتطبيق أثر &copy; 2026</p>
+        <span class="designer-name">المصمم: محمد خير أبو بلال</span>
+    </footer>
+
+</body>
+</html>
